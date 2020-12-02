@@ -165,9 +165,11 @@ text {
 .intro2 {
     padding-top: 50px
 }
-.intro2 p{
+
+.intro2 p {
     font-size: 20px
 }
+
 .intro2 img {
     width: 500px;
     padding: 20px;
@@ -184,14 +186,18 @@ text {
 .Work-Product h3 {
     padding: 20px
 }
-.Work-Product h4{
+
+.Work-Product h4 {
     font-size: 20px;
 }
+
 .box {
     border: 1px solid #ffffff;
     background-color: white;
     margin-bottom: 50px;
-    padding: 10px
+    padding: 10px;
+     -webkit-box-shadow:5px 5px 5px 5px #bababa;
+     box-shadow:5px 5px 5px 5px #bababa; 
 }
 
 .box h4 {
@@ -219,7 +225,7 @@ text {
 .Litigation_Support h3 {
     font-size: 30px;
     padding: 10px 10px;
-    
+
 
 }
 
@@ -241,7 +247,7 @@ text {
 
 .Security_Cols {
     background-color: #ededed;
-    margin-bottom: 30px;
+   
 }
 
 .Security_Cols h3 {
@@ -252,7 +258,10 @@ text {
 .box2 {
     border: 1px solid #ffffff;
     background-color: white;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    -webkit-box-shadow:5px 5px 5px 5px #bababa;
+    box-shadow:5px 5px 5px 5px #bababa; 
+
 }
 
 .box2 img {
@@ -313,8 +322,7 @@ text {
 
     position: relative;
     padding: 30px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(177, 177, 177, 0.7)), to(#313131)), url(../Assets/banner2.jpg);
-    background-image: linear-gradient(rgba(177, 177, 177, 0.7), #313131), url(../Assets/banner2.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 31, 31, 0.7)), to(#212121)), url(../Assets/banner2.jpg);
     background-size: cover;
     background-position: center;
 
@@ -330,8 +338,8 @@ text {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 3px;
-    font-size: 3em;
-    line-height: 48px;
+    font-size: 2em;
+    line-height: 38px;
     padding-bottom: 20px;
     color: White;
 
@@ -339,19 +347,28 @@ text {
 
 
 .form_box {
-    padding: 12px
+    padding: 12px;
 }
 
 .ContactForm_Btn {
     background-color: black;
     color: white;
-    padding: 20px 10px;
+    padding: 10px 10px;
     border-radius: 12px;
     border: 1px solid black;
     text-align: center;
     width: 30%;
     margin: auto;
     margin-top: 30px;
+    font-size: 20px
+}
+
+input[type=text],
+input[type=number] {
+    background: none;
+    border-radius: 0px;
+    border: 1px solid white;
+    color: white
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------*/
