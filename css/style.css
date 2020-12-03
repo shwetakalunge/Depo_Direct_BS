@@ -668,4 +668,44 @@ input[type=number] {
     .jumbotron2 {
         height: 50vh;
     }
+
+    .jumbotron h1 {
+        font-size: 30px;
+        line-height: 0.0;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        line-height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .jumbotron h2 {
+        font-size: 30px;
+        line-height: 1.0;
+    }
+
+    .banner-bottom-text {
+        padding: 0px;
+    }
+
+    .banner-bottom-text p {
+        font-size: 10px;
+
+    }
+
+    .Header-button {
+
+        padding: 10px 20px;
+        border: 1px solid black;
+        max-width: 200px;
+        width: 100%;
+        min-height: 40px;
+        border-radius: 5px;
+        font-size: 15px
+    }
+    .intro {
+    padding-top: 50px
+}
+    .video-text p {
+        font-size: 10px
+    }
 }
