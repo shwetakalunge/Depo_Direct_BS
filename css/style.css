@@ -1,7 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-
 }
 
 .clearfix {
@@ -11,13 +10,13 @@
 html,
 body {
     overflow-x: hidden;
-
-
 }
+
+
 
 h3 {
 
-    font-family: 'PT Serif', serif;
+    font-family: PlayfairDisplay-Regular;
 
 }
 
@@ -43,42 +42,69 @@ text {
 }
 
 .jumbotron {
-    background-image: url(../Assets/banner2.jpg);
+    background-image: url(../Assets/banner2-min.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
-    border-radius: 0px;
 }
 
 .jumbotron h1 {
-    font-size: 50px;
+    font-size: 60px;
     line-height: 1.0;
-    font-family: 'DM Serif Text', serif;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: bold
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    line-height: 80px;
+    margin-bottom: 50px;
 }
 
 .jumbotron h2 {
-    font-size: 30px;
+    font-size: 60px;
     line-height: 1.0;
+    font-family: 'Playfair Display', serif;
+
 }
 
 .Header-button {
     background-color: black;
     color: white;
     padding: 10px 20px;
-    border-radius: 12px;
-    border: 1px solid black
+    border: 1px solid black;
+    max-width: 230px;
+    width: 100%;
+    min-height: 60px;
+    border-radius: 5px;
+    font-family: 'Abril Fatface';
+    letter-spacing: 2.1px;
+    font-weight: bold;
+    font-size: 20px
 }
 
 .intro {
-    padding-top: 160px;
+    padding-top: 120px
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0px;
+    -webkit-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
+    z-index: 999;
+
+
 }
 
 .navbar-nav a {
     color: black;
-    margin: 0 20px;
-    margin-top: 10px;
+    margin: 0 25px;
+    color: #121212;
+    font-family: 'Abril Fatface';
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .navbar-toggler {
@@ -99,14 +125,49 @@ text {
     margin-bottom: 1px;
 }
 
-.video-text {
-    font-size: 35px
+.banner-bottom-text {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 10px;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
 }
 
+.banner-bottom-text p {
+    margin: 0px;
+    font-size: 20px;
+    color: red;
+    font-family: ProximaNova-Regular;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+.video-text p {
+    font-size: 35px;
+    font-family: 'PlayfairDisplay-Regular';
+    color: #090909;
+
+}
+
+.player_container {
+    /*  -webkit-box-shadow: 0px 10px 0px -3px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 15px 0px -3px rgba(0, 0, 0, 0.2);*/
+}
+
+.long_copy::before,
+.long_copy::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    margin: 20px auto;
+}
 
 .long_copy {
     background-color: white;
     margin-top: 30px;
+    font-family: 'Kanit';
 }
 
 .long_copy_button {
@@ -114,12 +175,22 @@ text {
     color: white;
     padding: 10px 20px;
     border-radius: 12px;
-    border: 1px solid black;
+    border: 0px solid black;
     margin-bottom: 30px;
+    min-height: 60px;
+    max-width: 230px;
+    width: 100%;
+
 }
 
+.Main_long_copy_button {
+    text-align: center
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
 .Main_GridImage {
     background-color: black;
+    padding: 40px 0;
 }
 
 .Main_GridImage_Header {
@@ -127,21 +198,27 @@ text {
     padding: 20px;
 }
 
+.Main_GridImage_Header p {
+    margin-bottom: 70px;
+    font-size: 18px;
+}
+
 .GridImage {
     width: 85%;
     margin: auto;
     background-color: white;
-    margin-top: 30px;
-    font-size: 15px;
-
 }
 
+.GridImage img {}
+
 .GridImage1 {
-    width: 300px
+    width: 250px
 }
 
 .GridImage li {
-    padding: 0px
+    margin-left: 15px;
+    font-family: ProximaNova-Regular;
+    font-size: 17px;
 }
 
 
@@ -159,32 +236,42 @@ text {
     color: white;
     padding: 10px 20px;
     border-radius: 12px;
-    border: 1px solid black
+    border: 0px solid black;
+    margin-top: 10px;
+    min-height: 60px;
+    max-width: 230px;
+    width: 100%;
+    font-family: ProximaNova-Regular;
 }
 
-.intro2 {
-    padding-top: 50px
-}
+.intro2 {}
 
 .intro2 p {
-    font-size: 20px
+    font-size: 20px;
+    font-family: ProximaNovaBold;
+    letter-spacing: 0.4px;
+    font-weight: bold;
 }
 
 .intro2 img {
-    width: 500px;
-    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    display: block;
 }
 
 
-
+/*------------------------------------------------------------------------------------------*/
 
 .Work-Product {
     background-color: #ededed;
-
+    padding: 60px 0px;
 }
 
 .Work-Product h3 {
-    padding: 20px
+    color: #090909;
+    font-family: PlayfairDisplay-Regular;
+    font-size: 40px;
 }
 
 .Work-Product h4 {
@@ -194,18 +281,23 @@ text {
 .box {
     border: 1px solid #ffffff;
     background-color: white;
-    margin-bottom: 50px;
+    margin-bottom: 00px;
     padding: 10px;
-     -webkit-box-shadow:5px 5px 5px 5px #bababa;
-     box-shadow:5px 5px 5px 5px #bababa; 
+    -webkit-box-shadow: 5px 5px 5px 5px #bababa;
+    box-shadow: 5px 5px 5px 5px #bababa;
+    margin-top: 50px;
+    height: 80%
 }
 
 .box h4 {
-    padding: 10px;
+    margin: 15px 0px;
+    font-size: 25x;
+    font-family: 'Merriweather-Bold;
+
 }
 
 .box p {
-    padding: 5px;
+    font-size: 15px
 }
 
 .jumbotron3-button {
@@ -219,12 +311,12 @@ text {
 /*------------------------------------------------------------------------------------------------------------------*/
 .Litigation_Support {
     background-color: black;
-    color: white
+    color: white;
+    padding: 60px 0px;
 }
 
 .Litigation_Support h3 {
     font-size: 30px;
-    padding: 10px 10px;
 
 
 }
@@ -233,6 +325,8 @@ text {
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
+    margin-bottom: 60px;
+    margin-top: 30px
 }
 
 .Litigation_Support-button {
@@ -242,72 +336,85 @@ text {
     border-radius: 5px;
     border: 1px solid black;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .Security_Cols {
     background-color: #ededed;
-   
+    padding: 60px 0px;
+
 }
 
 .Security_Cols h3 {
     font-size: 40px;
-    padding: 20px;
+    margin-bottom: 40px;
 }
 
 .box2 {
     border: 1px solid #ffffff;
     background-color: white;
-    margin-bottom: 50px;
-    -webkit-box-shadow:5px 5px 5px 5px #bababa;
-    box-shadow:5px 5px 5px 5px #bababa; 
+    -webkit-box-shadow: 5px 5px 5px 5px #bababa;
+    box-shadow: 5px 5px 5px 5px #bababa;
+    margin-bottom: 30px;
+    height: 100%;
 
 }
 
 .box2 img {
-    width: 100px
+    width: 100px;
+    margin-top: 45px
 }
 
 .box2 p {
-    padding: 10px;
+    font-size: 15px;
+
 }
 
 .box2 h4 {
-    padding: 10px;
+    font-family: Merriweather-Bold;
+    margin: 15px 0px;
+    font-size: 30px
 }
 
 
 .jumbotron3 {
     background-image: url(../Assets/laptop2-.jpg);
-    height: 60vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
 }
 
 .pricing_box {
     padding: 00px;
+    margin-top: 45px;
+
 
 }
 
 .pricing_box h5 {
-    font-size: 30px;
-    padding: 5px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: PlayfairDisplay-Regular;
 }
 
 .pricing_box p {
-    font-size: 20px;
+    font-size: 25px;
     padding: 5px;
     font-weight: 400;
+    font-family: PlayfairDisplay-Regular;
 }
 
 .pricing_box h6 {
     font-size: 30px;
     padding: 5px;
     font-weight: 500;
+    font-family: PlayfairDisplay-Regular;
 }
 
 .pricing_box li {
     padding: 5px;
+    font-family: PlayfairDisplay-Regular;
+    font-size: 20px;
 }
 
 .jumbotron3-button {
@@ -315,16 +422,19 @@ text {
     color: white;
     padding: 10px 20px;
     border-radius: 12px;
-    border: 1px solid black
+    border: 1px solid black;
+    margin-top: 25px;
 }
 
 .Schedule_Depo {
 
     position: relative;
     padding: 30px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 31, 31, 0.7)), to(#212121)), url(../Assets/banner2.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(#1c1c1c)), url(../Assets/banner2.jpg);
     background-size: cover;
     background-position: center;
+    padding-top: 60px;
+
 
 }
 
@@ -340,8 +450,9 @@ text {
     letter-spacing: 3px;
     font-size: 2em;
     line-height: 38px;
-    padding-bottom: 20px;
+    margin-bottom: 50px;
     color: White;
+
 
 }
 
@@ -378,6 +489,23 @@ input[type=number] {
         margin-top: 00px;
     }
 
+    .GridImage1 {
+        width: 250px
+    }
+
+    .GridImage {
+        width: 75%;
+        margin: auto;
+    }
+
+    .GridImage li {
+        margin-left: 10px;
+        font-size: 15px;
+
+
+    }
+
+
 }
 
 /*BIG TABLET TO 1200PX (WIDTH SMALLER THAN THE 1140 PX ROWS) */
@@ -391,6 +519,11 @@ input[type=number] {
         margin: auto;
 
     }
+
+    .jumbotron2 {
+        height: 70vh
+    }
+
 }
 
 /*SMALL TABLETS TO BIG TABLETS-IPAD IN LANDSCAPE PHONES(768 TO 1023PX)*/
@@ -398,6 +531,8 @@ input[type=number] {
     .jumbotron3 {
         height: 100vh;
     }
+
+    .intro2 img {}
 }
 
 /*SMALL PHONES TO SMALL TABLETS (IPAD-PHONES)-481 TO 767PX PIXELS*/
@@ -414,6 +549,55 @@ input[type=number] {
 
     .intro2 img {
         width: 400px
+    }
+
+    .long_copy p {
+        font-size: 20px;
+    }
+
+    .Work-Product {
+        background-color: #ededed;
+        padding: 60px 0px;
+    }
+
+    .Work-Product h3 {
+        color: #090909;
+        font-family: PlayfairDisplay-Regular;
+        font-size: 40px;
+    }
+
+    .Work-Product h4 {
+        font-size: 20px;
+    }
+
+    .box {
+        border: 1px solid #ffffff;
+        background-color: white;
+        margin-bottom: 00px;
+        padding: 10px;
+        -webkit-box-shadow: 5px 5px 5px 5px #bababa;
+        box-shadow: 5px 5px 5px 5px #bababa;
+        margin-top: 50px;
+        height: 80%
+    }
+
+    .box h4 {
+        margin: 15px 0px;
+        font-size: 25x;
+        font-family: 'Merriweather-Bold;
+
+    }
+
+    .box p {
+        font-size: 15px
+    }
+
+    .jumbotron3-button {
+        background-color: white;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid black
     }
 }
 
@@ -472,11 +656,16 @@ input[type=number] {
         padding: 10px;
 
     }
+
 }
 
 
 @media only screen and (max-width:320px) {
     .intro2 img {
         width: 300px
+    }
+
+    .jumbotron2 {
+        height: 50vh;
     }
 }
