@@ -10,7 +10,7 @@
 html,
 body {
     overflow-x: hidden;
-     text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
 }
 
 
@@ -36,6 +36,7 @@ h3 {
     background-size: cover;
     background-position: center;
 }
+
 /*h1{
        
     animation: type 5s steps(19);
@@ -53,19 +54,19 @@ h3 {
     font-weight: bold;
     line-height: 80px;
     margin-bottom: 50px;
-    
- 
-    
 }
+
 /*-------------------*/
-@keyframes type{
-    0%{
+@keyframes type {
+    0% {
         width: 0ch;
     }
-    100%{
+
+    100% {
         width: 19ch;
     }
 }
+
 /*--------------------*/
 .jumbotron h2 {
     font-size: 60px;
@@ -552,6 +553,9 @@ input[type=number] {
         height: 100vh;
     }
 
+    .jumbotron {
+        height: auto;
+    }
 
 
     .ContactForm_Btn {
@@ -621,6 +625,11 @@ input[type=number] {
 
     }
 
+    .jumbotron {
+        height: auto;
+        position: relative;
+    }
+
     .pricing_box h5 {
         font-size: 30px;
         padding: 0px;
@@ -629,6 +638,7 @@ input[type=number] {
 
     .jumbotron3 {
         background-image: none;
+
 
     }
 
@@ -676,9 +686,27 @@ input[type=number] {
         width: 300px
     }
 
-    .jumbotron2 {
+       .jumbotron2 {
         height: 50vh;
     }
-
+    /*---------------------------*/
+    .banner-bottom-text p {
+        padding: 0px 0px;
+        font-size: 10px;
+    }
     
+    
+    .jumbotron h1 {
+        font-size: 25px;
+         margin-bottom: 10px;
+        
+    }
+    .jumbotron h2{
+       font-size: 25px; 
+    }
+    .jumbotron{
+        min-height: 100vh;
+        padding: 50px 0px;
+        position: relative;
+    }
 }
