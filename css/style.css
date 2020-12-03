@@ -10,6 +10,7 @@
 html,
 body {
     overflow-x: hidden;
+     text-rendering: optimizeLegibility;
 }
 
 
@@ -20,18 +21,6 @@ h3 {
 
 }
 
-h4 {
-    font-family: 'PT Serif', serif;
-}
-
-p {
-    font-family: 'Arvo', serif;
-}
-
-text {
-    font-family: 'Arvo', serif;
-
-}
 
 .clearfix:after {
     content: ".";
@@ -47,7 +36,16 @@ text {
     background-size: cover;
     background-position: center;
 }
-
+/*h1{
+       
+    animation: type 5s steps(19);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    width: 19ch;
+    text-align: center;
+    content: attr(data-text)
+}*/
 .jumbotron h1 {
     font-size: 60px;
     line-height: 1.0;
@@ -55,8 +53,20 @@ text {
     font-weight: bold;
     line-height: 80px;
     margin-bottom: 50px;
+    
+ 
+    
 }
-
+/*-------------------*/
+@keyframes type{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 19ch;
+    }
+}
+/*--------------------*/
 .jumbotron h2 {
     font-size: 60px;
     line-height: 1.0;
@@ -124,6 +134,7 @@ text {
     border-bottom: 1px solid black;
     margin-bottom: 1px;
 }
+
 
 .banner-bottom-text {
     background-color: rgba(0, 0, 0, 0.8);
@@ -642,7 +653,7 @@ input[type=number] {
     }
 
     .video-text {
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 600
     }
 
@@ -669,43 +680,5 @@ input[type=number] {
         height: 50vh;
     }
 
-    .jumbotron h1 {
-        font-size: 30px;
-        line-height: 0.0;
-        font-family: 'Playfair Display', serif;
-        font-weight: bold;
-        line-height: 80px;
-        margin-bottom: 10px;
-    }
-
-    .jumbotron h2 {
-        font-size: 30px;
-        line-height: 1.0;
-    }
-
-    .banner-bottom-text {
-        padding: 0px;
-    }
-
-    .banner-bottom-text p {
-        font-size: 10px;
-
-    }
-
-    .Header-button {
-
-        padding: 10px 20px;
-        border: 1px solid black;
-        max-width: 200px;
-        width: 100%;
-        min-height: 40px;
-        border-radius: 5px;
-        font-size: 15px
-    }
-    .intro {
-    padding-top: 50px
-}
-    .video-text p {
-        font-size: 10px
-    }
+    
 }
